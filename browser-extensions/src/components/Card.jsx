@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function Card({ title, description, isActive, logo , setIsActive, handleRemove}) {
 
   return (
-    <div className="shadow bg-neutral-50 dark:bg-neutral-800 rounded-xl p-4 m-1 max-w-[380px] min-h-[200px]">
+    <div className="shadow bg-neutral-50 dark:bg-neutral-800 rounded-xl p-4 m-1 w-full min-h-[200px]">
       <div className="flex items-start gap-3 mb-5 min-h-[100px]">
         <img src={logo} alt="" />
         <div>
