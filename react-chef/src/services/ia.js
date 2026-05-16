@@ -65,8 +65,7 @@ export async function getRecipe(ingredientsArr) {
   const ingredientsString = ingredientsArr.join(", ");
   try {
     const response = await hf.chatCompletion({
-      model: "mistralai/Mistral-7B-Instruct-v0.3",
-      provider: "groq",
+      model: "HuggingFaceH4/zephyr-7b-beta",
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
         {
