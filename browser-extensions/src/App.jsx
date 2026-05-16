@@ -52,7 +52,7 @@ function App() {
             <Button title="Inactive" handle={() => setFiltro("inactive")} />
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 place-items-center">
+        <div className="grid lg:grid-cols-3 grid-cols-1 sm:grid-cols-2 items-stretch">
           {filtrarCard(data).map((item) => (
             <Card
               key={item.id}
